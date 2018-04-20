@@ -1,37 +1,780 @@
-## Welcome to GitHub Pages
+<html>
 
-You can use the [editor on GitHub](https://github.com/PABLO-GIS/SAR-Libya.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!--Animated/running numbers -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
+  
+  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  
+  
+  
 
-### Markdown
+    <!-- Custom fonts for this template -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto Slab:400,700,800, 400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    
 
-```markdown
-Syntax highlighted code block
+    <!-- snippers css - hovering effect -->
+    <link href="https://dtm-libya.github.io/css/mapping_windows.css" rel="stylesheet">
+	
+		<!-- highcharts.js -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+	
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-# Header 1
-## Header 2
-### Header 3
+	
+</head>
+<style>
 
-- Bulleted
-- List
+      html, body {
+		margin:0px;
+	   
+        height: 100%;
+		font-size:15px;
+        width: 100%; 
+		
+		background: #fafaf8;
+		
+      }
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+	  
+</style>
+ 
+<body>
 
-[Link](url) and ![Image](src)
-```
+   
+	
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+ 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PABLO-GIS/SAR-Libya.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+ 
 
-### Support or Contact
+<br>
+<br>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+<!-- Migrants -->
+
+		<!-- Migrants' key figures -->
+		<div class="section">
+
+		
+		
+			<div class="container">
+		
+				 
+				
+				
+			    <div style="margin-top:0px;position:absolute"><img style="width: 85px" src="http://www.ethiopiaprosperous.com/wp-content/uploads/2016/06/A-Iom.png" ></div> 
+			
+			    
+				<h1 style="font-weight:bold; border-top: solid 0px rgba(18,73,146,0.5); margin:20 0 20 0; color:rgba(18,73,146,1)"  class="text-center title" id="portfolio"><font>Maritime incidents in Libya - 2018</font></h1>	
+			   
+				<div  style="color:rgba(18,73,146,1); border-bottom: solid 1px rgba(18,73,146,0.5);margin-top:10px;z-index:100;text-align:center;font-size:15px"><span style="font-size:15px;color:rgba(18,73,146,1);weight:500"></span> Last updated : March 2018 </div>
+				<br></br>
+				<div  style="text-align:center;color:#666666;font-size:22px">Rescued: <span id="arrivals" style="font-size:22px;color:#666666;font-weight: bold"> 0,0000</span><span style="font-size:22px;color:#ed9789;font-weight: bold">  |  Deaths:</span><span id="deaths" style="font-size:22px;color:#ed9789;font-weight: bold"> 000</span><span style="font-size:22px;color:#ed9789;font-weight: bold">  |  Missing:</span><span id="missing" style="font-size:22px;color:#ed9789;font-weight: bold"> 00</span></div>
+				
+					
+				
+			   <br><br>
+					
+                <iframe width="100%" height="50%"  src="http://www.pablogallego-gis.com/maps/SAR_Locations.html" frameborder="0" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+				<div  id="line_1" style=" height:300px;"></div>					
+				<!--<div style="border: solid 0px #ccc; height:500px;" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					
+					
+				
+					<iframe width="100%" height="100%"  src="https://dtm-libya.github.io/world_spreadsheet.html" frameborder="0" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+						
+					
+				</div>-->
+				<br><br>
+				<div id="locations" style="padding: 20px;height:300px;border: solid 0px #ccc;background-color: #fbfbf9" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				
+										
+				</div>
+				<div id="d1" style="padding: 20px;height:300px;border: solid 0px #ccc;background-color: #fbfbf9" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				
+														
+					
+				</div>
+				<div style="padding: 20px;height:250px;border: solid 0px #ccc;background-color: #fbfbf9" id="pyramid" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+																		
+				</div>
+				
+				<div id="pie_aid" style="padding: 20px;height:250px;border: solid 0px #ccc;background-color: #fbfbf9;" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				
+			    </div>
+				
+				<h2 style="margin-top:30px;text-align:center" >Interactive dashboard </h2>
+				<div>			
+					<iframe width="100%" height="100%"  src="https://kkadabon.carto.com/builder/af220332-d0e4-47f0-bc17-9ecf69b30926/embed" frameborder="0" scrolling="no"></iframe>
+					</div>
+		</div>
+		
+		
+	
+</body>
+  
+  <!-- highcharts + animated figures 	<script src="js/SAR.js" ></script>-->
+
+
+
+	
+	<script>
+	//Line-chart | section : 
+
+Highcharts.chart('line_1', {
+	exporting: { enabled: false },
+	
+	credits: {enabled: false},
+    
+    chart: {
+        type: 'areaspline',
+		backgroundColor:'transparent' 
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+   
+ annotations: [{
+	 
+	    labelOptions: {
+            backgroundColor: 'rgba(255,255,255,0.5)',
+            verticalAlign: 'bottom',
+            
+        },
+	 
+	 
+        labels: [{
+            point: { x: 155, y: 45 },
+            text: ''
+        }]
+    }],
+
+ 
+
+   xAxis: {
+        type: 'datetime',
+        dateTimeLabelFormats: { // don't display the dummy year
+            month: '%b',
+            year: '%b'
+        },
+        title: {
+            text: ''
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'No. of people rescued'
+        },
+        min: 0,
+     gridLineColor: '#f2f2f2'
+
+   },
+    tooltip: {
+        headerFormat: '<b>{series.name}</b><br>',
+        pointFormat: '{point.x:%d-%b }: {point.y:.0f} People'
+    },
+
+	
+	 labelOptions: {
+            shape: 'connector',
+            align: 'right',
+            justify: false,
+            crop: true,
+            style: {
+                fontSize: '0.8em',
+                textOutline: '1px white'
+            }
+        },
+	
+legend: {
+    layout: 'none',
+    align: 'right',
+    x: 0,
+    verticalAlign: 'top',
+    y:60,
+    floating: true,
+    backgroundColor: 'transparent',
+	color:'#99aed6',
+},
+	
+	
+    plotOptions: {
+           areaspline: {
+            fillOpacity: 0.2
+        }
+    },
+series: [{
+        name: '2017', 
+        // Define the data points. All series have a dummy year
+        // of 1970/71 in order to be compared on the same x axis. Note
+        // that in JavaScript,  months start at 0 for January,  1 for February etc.
+        data: [
+  
+[Date.UTC(2017, 00, 02) ,120],
+[Date.UTC(2017, 00, 04) ,65],
+[Date.UTC(2017, 00, 13) ,48],
+[Date.UTC(2017, 00, 21) ,1],
+[Date.UTC(2017, 00, 24) ,0],
+[Date.UTC(2017, 00, 28) ,465],
+[Date.UTC(2017, 01, 03) ,300],
+[Date.UTC(2017, 01, 04) ,179],
+[Date.UTC(2017, 01, 05) ,113],
+[Date.UTC(2017, 01, 18) ,125],
+[Date.UTC(2017, 01, 19) ,1],
+[Date.UTC(2017, 01, 20) ,0],
+[Date.UTC(2017, 01, 22) ,152],
+[Date.UTC(2017, 01, 23) ,82],
+[Date.UTC(2017, 02, 02) ,333],
+[Date.UTC(2017, 02, 02) ,110],
+[Date.UTC(2017, 02, 09) ,3],
+[Date.UTC(2017, 02, 12) ,1],
+[Date.UTC(2017, 02, 19) ,215],
+[Date.UTC(2017, 02, 20) ,552],
+[Date.UTC(2017, 02, 21) ,54],
+[Date.UTC(2017, 02, 28) ,225],
+[Date.UTC(2017, 03, 02) ,153],
+[Date.UTC(2017, 03, 06) ,138],
+[Date.UTC(2017, 03, 13) ,51],
+[Date.UTC(2017, 03, 14) ,101],
+[Date.UTC(2017, 04, 04) ,137],
+[Date.UTC(2017, 04, 06) ,278],
+[Date.UTC(2017, 04, 07) ,146],
+[Date.UTC(2017, 04, 10) ,497],
+[Date.UTC(2017, 04, 18) ,463],
+[Date.UTC(2017, 04, 20) ,102],
+[Date.UTC(2017, 04, 22) ,2],
+[Date.UTC(2017, 04, 23) ,326],
+[Date.UTC(2017, 04, 24) ,87],
+[Date.UTC(2017, 04, 26) ,1332],
+[Date.UTC(2017, 04, 27) ,404],
+[Date.UTC(2017, 05, 05) ,110],
+[Date.UTC(2017, 05, 05) ,0],
+[Date.UTC(2017, 05, 09) ,380],
+[Date.UTC(2017, 05, 10) ,438],
+[Date.UTC(2017, 05, 11) ,0],
+[Date.UTC(2017, 05, 13) ,0],
+[Date.UTC(2017, 05, 16) ,775],
+[Date.UTC(2017, 05, 18) ,157],
+[Date.UTC(2017, 05, 21) ,0],
+[Date.UTC(2017, 05, 23) ,115],
+[Date.UTC(2017, 05, 24) ,1],
+[Date.UTC(2017, 05, 26) ,135],
+[Date.UTC(2017, 05, 27) ,148],
+[Date.UTC(2017, 05, 28) ,174],
+[Date.UTC(2017, 06, 03) ,4],
+[Date.UTC(2017, 06, 08) ,65],
+[Date.UTC(2017, 06, 11) ,0],
+[Date.UTC(2017, 06, 13) ,391],
+[Date.UTC(2017, 06, 20) ,0],
+[Date.UTC(2017, 06, 24) ,133],
+[Date.UTC(2017, 06, 30) ,48],
+[Date.UTC(2017, 07, 03) ,120],
+[Date.UTC(2017, 07, 04) ,501],
+[Date.UTC(2017, 07, 05) ,239],
+[Date.UTC(2017, 07, 06) ,249],
+[Date.UTC(2017, 07, 07) ,155],
+[Date.UTC(2017, 07, 09) ,143],
+[Date.UTC(2017, 07, 10) ,101],
+[Date.UTC(2017, 07, 16) ,107],
+[Date.UTC(2017, 07, 21) ,102],
+[Date.UTC(2017, 07, 27) ,0],
+[Date.UTC(2017, 07, 28) ,134],
+[Date.UTC(2017, 07, 29) ,272],
+[Date.UTC(2017, 07, 30) ,283],
+[Date.UTC(2017, 08, 11) ,0],
+[Date.UTC(2017, 08, 12) ,248],
+[Date.UTC(2017, 08, 13) ,136],
+[Date.UTC(2017, 08, 15) ,153],
+[Date.UTC(2017, 08, 16) ,2031],
+[Date.UTC(2017, 08, 20) ,40],
+[Date.UTC(2017, 08, 30) ,226],
+[Date.UTC(2017, 09, 03) ,52],
+[Date.UTC(2017, 09, 11) ,172],
+[Date.UTC(2017, 09, 13) ,0],
+[Date.UTC(2017, 09, 18) ,258],
+[Date.UTC(2017, 09, 19) ,0],
+[Date.UTC(2017, 09, 22) ,0],
+[Date.UTC(2017, 09, 27) ,228],
+[Date.UTC(2017, 09, 31) ,299],
+[Date.UTC(2017, 10, 05) ,151],
+[Date.UTC(2017, 10, 07) ,47],
+[Date.UTC(2017, 10, 12) ,0],
+[Date.UTC(2017, 10, 16) ,0],
+[Date.UTC(2017, 10, 23) ,250],
+[Date.UTC(2017, 10, 24) ,607],
+[Date.UTC(2017, 10, 25) ,154],
+[Date.UTC(2017, 10, 28) ,124],
+[Date.UTC(2017, 11, 08) ,48],
+[Date.UTC(2017, 11, 09) ,161],
+[Date.UTC(2017, 11, 13) ,116],
+[Date.UTC(2017, 11, 14) ,168],
+[Date.UTC(2017, 11, 15) ,128],
+[Date.UTC(2017, 11, 16) ,262],
+[Date.UTC(2017, 11, 22) ,0],
+        
+        ],
+		color:'#99aed6',
+		lineWidth: 1
+    },  {
+        name: '2018', 
+        data: [
+[Date.UTC(2017, 00, 07) ,270],
+[Date.UTC(2017, 00, 08) ,135],
+[Date.UTC(2017, 00, 09) ,384],
+[Date.UTC(2017, 00, 15) ,352],
+[Date.UTC(2017, 00, 16) ,123],
+[Date.UTC(2017, 00, 17) ,233],
+[Date.UTC(2017, 00, 20) ,1],
+[Date.UTC(2017, 00, 27) ,86],
+[Date.UTC(2017, 00, 29) ,121],
+[Date.UTC(2017, 00, 31) ,341],
+[Date.UTC(2017, 01, 01) ,23],
+[Date.UTC(2017, 01, 09) ,0],
+[Date.UTC(2017, 01, 15) ,0],
+[Date.UTC(2017, 01, 16) ,0],
+[Date.UTC(2017, 01, 19) ,252],
+[Date.UTC(2017, 01, 28) ,100],
+[Date.UTC(2017, 02, 02) ,200],
+[Date.UTC(2017, 02, 10) ,342],
+[Date.UTC(2017, 02, 12) ,21],
+[Date.UTC(2017, 02, 13) ,98],
+[Date.UTC(2017, 02, 14) ,122],
+[Date.UTC(2017, 02, 15) ,97],
+[Date.UTC(2017, 02, 16) ,98],
+		
+
+            
+        ],
+color: '#ff9966',
+lineWidth: 1
+    }]
+	
+
+
+});
+
+
+//Pie-chart | section : 
+
+Highcharts.chart('pie_aid', {
+    exporting: { enabled: false },
+	
+	credits: {enabled: false},
+	chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: 0,
+        plotShadow: false,
+		backgroundColor:'transparent' 
+    },
+    title: {
+        text: 'AID<br>Provided<br>2018',
+        align: 'center',
+        verticalAlign: 'middle',
+        y: 40
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            dataLabels: {
+                enabled: false,
+                distance: -10,
+                style: {
+                    fontWeight: 'bold',
+                    color: 'white'
+                }
+            },
+            startAngle: -90,
+            endAngle: 90,
+            center: ['50%', '75%'],
+			
+			 showInLegend: true
+        }
+    },
+legend: {
+    layout: 'none',
+    align: 'right',
+    x: 0,
+    verticalAlign: 'top',
+    y:50,
+    floating: true,
+    backgroundColor: 'transparent',
+	color:'grey',
+},
+	
+
+	
+    series: [{
+        type: 'pie',
+        name: 'Browser share',
+        innerSize: '50%',
+        data: [
+            ['Health', 33],
+            ['Food', 12],
+            ['Hygiene', 1],
+            ['NFI', 1],
+            ['Family tracing', 2],
+            
+        ]
+    }]
+});
+
+
+Highcharts.chart('d1', {
+exporting: { enabled: false },
+	credits: {enabled: false},
+      chart: {
+        type: 'bar',
+		backgroundColor:'transparent' ,
+    },
+    title: {
+        text: "Destination after  disemabarkation"
+    },
+    subtitle: {
+        text: "Detention centers of destination after disembarkation <br>Data from Jan. 2017"
+    },
+    xAxis: {
+	
+		
+	
+	
+        categories: [
+		'Tariq Al sekka DC',
+		'Tajoura DC',
+		'Zwara Passport Checkpoint',
+		'Suq Alkhamis DC',
+		'Zwara DC',
+		
+		
+		/*
+		'Eritrea',
+		'Cameroon',
+		'Ghana',
+		'Somalia',
+		'Egypt',
+		'Syria',
+		'Sierra Leone',
+		'Pakistan',
+		'Niger',
+		'Tunisia'*/
+		
+		],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'grey'
+                }
+            }
+        }
+    },
+    legend: {
+        enabled: false
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+
+	
+	
+	
+        name: 'No. of People',
+       
+		 data: [{
+            name: '46%',
+            y: 1569
+        }, {
+            name: '38%',
+            y: 1296
+           
+        }, {
+            name: '7%',
+            y: 235
+        }, {
+            name: '5.7%',
+            y: 193
+        },
+		{
+            name: '3%',
+            y: 105
+        }
+		
+		
+			],
+			
+			color:'#728fc7'
+		
+    }]
+});
+
+// Age categories
+var categories = [
+    'Adults', 'Children',
+];
+
+Highcharts.chart('pyramid', {
+    
+	exporting: { enabled: false },
+	credits: {enabled: false},
+
+   chart: {
+        type: 'bar',
+		backgroundColor:'transparent' ,
+    },
+    title: {
+        text: 'Population Breackdown'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: [{
+        categories: categories,
+        reversed: false,
+        labels: {
+            step: 1
+        }
+    }, { // mirror axis on right side
+        opposite: true,
+        reversed: false,
+        categories: categories,
+        linkedTo: 0,
+        labels: {
+            step: 1
+        }
+    }],
+    yAxis: {
+        title: {
+            text: null
+        },
+        labels: {
+            formatter: function () {
+                return Math.abs(this.value) + '';
+            }
+        }
+    },
+
+    plotOptions: {
+        series: {
+            stacking: 'normal'
+        }
+    },
+
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.series.name + ', age ' + this.point.category + '</b><br/>' +
+                'Population: ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+        }
+    },
+
+    series: [{
+        name: 'Male',
+        data: [-17577, -838],
+		 color: '#728fc7',
+    
+	
+	}, {
+        name: 'Female',
+        data: [2442, 111],
+    color: '#f28f80',
+	}]
+});
+
+Highcharts.chart('locations', {
+exporting: { enabled: false },
+	credits: {enabled: false},
+      chart: {
+        type: 'bar',
+		backgroundColor:'transparent' ,
+    },
+    title: {
+        text: "Origins : Top 10 "
+    },
+    subtitle: {
+        text: "Migrants rescued by LCG | Data from Jan. 2018"
+    },
+	
+
+	
+    xAxis: {
+        categories: [
+		'Nigeria',		
+		'Eritrea',
+		'Mali',
+		'Sudan',
+		'Ivory Coast',
+		'Somalia',
+		'Guinea-Conakry',
+		'Cameroom',
+		'Senegal',
+		'Gambia',
+		
+		
+		/*
+		Nigeria	674	674	20
+Eritrea	393	393	12
+Mali	347	347	10
+Sudan	295	295	9
+Cote d'Ivoire	262	262	8
+Somalia	191	191	6
+Guinea -Conakry	179	179	5
+Cameroon	161	161	5
+Senegal	159	159	5
+Gambia	129	129	4
+*/
+		
+		],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'grey'
+                }
+            }
+        }
+    },
+    legend: {
+        enabled: false
+    },
+    credits: {
+        enabled: false
+    },
+	
+
+    series: [{
+        name: 'No. of People',
+       
+		 data: [{
+            name: '20%',
+            y: 674
+        }, {
+            name: '12%',
+            y: 393
+           
+        }, {
+            name: '10%',
+            y: 347
+        }, {
+            name: '9%',
+            y: 295
+        },
+		{
+            name: '8%',
+            y: 262
+        }, {
+            name: '6%',
+            y:191
+           
+        }, {
+            name: '5%',
+            y: 179
+        }, {
+            name: '5%',
+            y: 161
+        }, {
+            name: '5%',
+            y: 159
+        }, {
+            name: '4%',
+            y: 129
+        },
+		
+		
+			],
+			
+			color:'#728fc7'
+		
+    }]
+});
+//ANIMATED FIGURES
+	    var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+		$('#arrivals').animateNumber(
+		{
+ 
+		number: 3398,
+		numberStep: comma_separator_number_step
+		},
+		10000
+		);
+
+		$('#deaths').animateNumber(
+		{
+		
+		number: 37,
+		numberStep: comma_separator_number_step
+		},
+		10000
+		);
+		$('#missing').animateNumber(
+		{
+		
+		number: 101,
+		numberStep: comma_separator_number_step
+		},
+		10000
+		);
+		
+//bar chart origins //
+</script>
+</html>
